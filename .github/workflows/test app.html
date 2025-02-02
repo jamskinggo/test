@@ -1,1 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo-app</title>
+</head>
+<body>
+    <div class="todo-app">
+        <div class="title">智能中医诊断</div>
+        <div class="todo-from">
+            <input class="todo-input" type="text" placeholder="add a todo" />
+            <div class="todo-button">add todo</div>
+        </div>
+    
+    <div class="item completed">
+        <div>
+            <input type="checkbox">
+            <span class="name">病人</span>
+            
+        </div>
 
+        <div class="del">del</div>
+    </div>
+    <div class="item">
+        <div>
+            <input type="checkbox">
+            <span class="name">病人</span>
+            
+        </div>
+
+        <div class="del">del</div>
+    </div>
+    <div class="item">
+        <div>
+            <input type="checkbox">
+            <span class="name">病人</span> 
+            
+        </div>
+
+        <div class="del">del</div>
+    </div>
+
+    <style>
+        .completed{
+            text-decoration: line-through;
+            opacity: 0.4; /*透明度*/
+        }
+        .del{
+            color: rgb(251, 6, 6);
+
+        }
+        .item{
+            display: flex;
+            box-sizing: border-box;
+            width: 80%;
+            height: 50px;
+            color: rgb(13, 13, 13);
+            margin: 8px auto;
+            padding: 16px;
+            border-radius: 20px;
+            border-radius: 20px;
+            box-shadow: rgba(129, 23, 135, 0.2)0px 8px 20px;
+            justify-content: space-between;/*元素自动分配空间*/
+
+        }
+         body {
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, rgb(113,65,168), rgb(44,114,251,1));
+            background-attachment: fixed;
+            background-size: 100% 100%;
+            position: relative;
+        }
+        .todo-app{
+            width: 98%;
+            height: 500px;
+            background-color: rgb(230, 234, 237);
+            border-radius: 50px;
+            margin-top: 40px;
+            margin-left: 1%;
+            padding-top: 20px;
+
+        }
+        .title{
+            font-size: 30px; /* 字体 */
+            font-weight: 700;
+            text-align: center;
+            
+        }
+        .todo-from{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 30px;
+        }
+        .todo-input{
+            padding-left: 10px; /*文字距离左边的距离*/
+            width: 60%;
+            height: 50px;
+            border-radius: 10px 0 0 10px;
+            border: 1px solid rgb(8, 8, 8);
+            outline: none;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        }
+        .todo-button{
+            width: 100px;
+            height: 52px;
+            background-image: linear-gradient(to right, rgb(113,65,168), rgb(44,114,251,1));
+            color: white;
+            text-align: center;
+            border: 1px solid rgb(8, 8, 8);
+            line-height: 52px;  /*文字垂直居中*/
+            border-radius: 0 10px 10px 0;
+            cursor: pointer;
+            user-select: none;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</body>
+</html>
